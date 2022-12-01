@@ -1,3 +1,3 @@
 # PentaGon
 PentaGon workplace
-developers bracnh is called dev
+developers branch is called dev
