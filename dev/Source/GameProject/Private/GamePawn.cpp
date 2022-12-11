@@ -17,7 +17,13 @@ void AGamePawn::BeginPlay()
 	Super::BeginPlay();
 }
 
+void AGamePawn::CalcCamera(float DeltaTime, struct FMinimalViewInfo& OutResult)
+{
+	Super::CalcCamera(DeltaTime, OutResult);
 
+	OutResult.Rotation = FRotator(0.0f, 0.0f, 0.0f);
+	OutResult.Location = FVector(-1000.0f, 0.0f, 300.0f);
+}
 
 // Called every frame
 void AGamePawn::Tick(float DeltaTime)
