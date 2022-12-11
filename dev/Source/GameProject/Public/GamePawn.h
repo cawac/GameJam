@@ -14,7 +14,6 @@ class GAMEPROJECT_API AGamePawn : public APawn
 public:
 	// Sets default values for this pawn's properties
 	AGamePawn();
-	virtual void CalcCamera(float DeltaTime, struct FMinimalViewInfo& OutResult) override;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
